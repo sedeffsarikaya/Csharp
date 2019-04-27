@@ -1,0 +1,36 @@
+using System;
+namespace for_döngüsü2
+{
+    class Program
+    {
+    static void Main(string[] args)
+        {
+        string sonuc = "";
+            Console.Write("1.takimin adi:");
+            string takim1 = Console.ReadLine();
+
+            Console.Write("2.takimin adi:");
+            string takim2 = Console.ReadLine();
+
+            Console.Write("gerceklesen mac sayisi:");
+            int macSayisi = Convert.ToInt32(Console.ReadLine());
+
+            Random rnd = new Random();
+
+            for(int i=0;i <macSayisi;i++)
+            {
+                int skor1 = rnd.Next(0, 10);
+                int skor2 = rnd.Next(0, 10);
+                sonuc=$"{takim1}:{skor1}-{takim2}:{skor2}";
+                Console.WriteLine(sonuc);
+
+            sonuc string i tanımlamasaydik şu sekılde de yazabılırdık:
+            Console.WriteLine($"{takim1}:{skor1} - {skor2}:{takim2}");
+            }
+
+
+            Console.ReadKey();
+            
+        }
+    }
+}
